@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.1em;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  background: slategrey;
+  color: rgb(236, 236, 236);
+}
+nav a {
+  color: rgb(236, 236, 236);
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0.5em;
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4.5em;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: 0.5em 0 0 0;
+}
+.container a {
+  color: rgb(236, 236, 236);
+  text-decoration: none;
+}
+nav a:hover {
+  color: rgba(31, 31, 31, 0.822);
+}
+.clock-local {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+#clock {
+  font-size: 5em;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+.city-clocks {
+  display: flex;
+  font-size: 1.5em;
+  background: #596673;
+  justify-content: center;
+  align-items: center;
+}
+.city-clocks p {
+  color: rgba(236, 236, 236, 0.596);
+}
+.new-york {
+  flex-direction: column;
+  text-align: center;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+#nyClock {
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 0.3em;
+  color: rgba(236, 236, 236, 0.596);
+}
+.london {
+  flex-direction: column;
+  text-align: center;
+  margin: 1em;
+}
+#londonClock {
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 0.3em;
+  color: rgba(236, 236, 236, 0.596);
+}
+.tokyo {
+  flex-direction: column;
+  text-align: center;
+  margin: 1em;
+}
+#tokyoClock {
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 0.3em;
+  color: rgba(236, 236, 236, 0.596);
+}
+.los-angeles {
+  flex-direction: column;
+  text-align: center;
+  margin: 1em;
+}
+#laClock {
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 0.3em;
+  color: rgba(236, 236, 236, 0.596);
+}
+.new-york p,
+.london p,
+.tokyo p,
+.los-angeles p {
+  font-weight: 900;
+  font-size: 1.2em;
+  border-bottom: 3px solid #21262bc0;
+}
