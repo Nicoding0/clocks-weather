@@ -28,7 +28,7 @@ function displayLocalTime() {
 function displayNewYorkTime() {
   //*Fetch the json data from the API
   fetch(
-    `http://api.geonames.org/timezoneJSON?lat=40.71&lng=-74&username=nicolasmartine`
+    `https://api.geonames.org/timezoneJSON?lat=40.71&lng=-74&username=nicolasmartine`
   )
     //*When the API responds return it
     .then(response => {
@@ -44,7 +44,7 @@ function displayNewYorkTime() {
 }
 function displayLondonTime() {
   fetch(
-    `http://api.geonames.org/timezoneJSON?lat=51.5&lng=-0.1&username=nicolasmartine`
+    `https://api.geonames.org/timezoneJSON?lat=51.5&lng=-0.1&username=nicolasmartine`
   )
     .then(response => {
       return response.json();
@@ -57,7 +57,7 @@ function displayLondonTime() {
 }
 function displayTokyoTime() {
   fetch(
-    `http://api.geonames.org/timezoneJSON?lat=35.6&lng=139.8&username=nicolasmartine`
+    `https://api.geonames.org/timezoneJSON?lat=35.6&lng=139.8&username=nicolasmartine`
   )
     .then(response => {
       return response.json();
@@ -70,7 +70,7 @@ function displayTokyoTime() {
 }
 function displayLosAngelesTime() {
   fetch(
-    `http://api.geonames.org/timezoneJSON?lat=34&lng=-118.2&username=nicolasmartine`
+    `https://api.geonames.org/timezoneJSON?lat=34&lng=-118.2&username=nicolasmartine`
   )
     .then(response => {
       return response.json();
@@ -98,8 +98,6 @@ setInterval(displayTokyoTime, 60000);
 setInterval(displayLosAngelesTime, 60000);
 
 /*
-!http://api.geonames.org/timezoneJSON?lat=48.01&lng=2.2&username=nicolasmartine (LatLng is Paris in this case)
-
 !API DOC >>>
 *Webservice Type : REST
 *Base Url : api.geonames.org/timezone?
@@ -108,22 +106,8 @@ setInterval(displayLosAngelesTime, 60000);
 *Example(XML) http://api.geonames.org/timezone?lat=47.01&lng=10.2&username=demo
 
 *This service is also available in JSON format : http://api.geonames.org/timezoneJSON?lat=47.01&lng=10.2&username=demo
-
-
-*Element:
-*countryCode: ISO countrycode
-*countryName: name (language can be set with param lang)
-*timezoneId: name of the timezone (according to olson), this *information is sufficient to work with the timezone and *defines DST rules, consult the documentation of your *development environment. Many programming environments *include functions based on the olson timezoneId (example *java TimeZone)
-*time: the local current time
-*sunset: sunset local time (date)
-*sunrise: sunrise local time (date)
-*rawOffset: the amount of time in hours to add to UTC to get *standard time in this time zone. Because this value is not *affected by daylight saving time, it is calledyraw offset.
-*gmtOffset: offset to GMT at 1. January (deprecated)
-*dstOffset: offset to GMT at 1. July (deprecated)
- */
+*/
 /*
  *Useful list of timezones link >>> https://www.zeitverschiebung.net/fr/all-time-zones.html
  *Useful Lat Long link >>> https://www.latlong.net/
-
- !NewYork London Tokyo Los angeles
  */
