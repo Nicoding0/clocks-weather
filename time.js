@@ -28,7 +28,7 @@ function displayLocalTime() {
 function displayNewYorkTime() {
   //*Fetch the json data from the API
   fetch(
-    `https://api.geonames.org/timezoneJSON?lat=40.71&lng=-74&username=nicolasmartine`
+    `https://cors-anywhere.herokuapp.com/http://api.geonames.org/timezoneJSON?lat=40.71&lng=-74&username=nicolasmartine`
   )
     //*When the API responds return it
     .then(response => {
@@ -44,7 +44,7 @@ function displayNewYorkTime() {
 }
 function displayLondonTime() {
   fetch(
-    `https://api.geonames.org/timezoneJSON?lat=51.5&lng=-0.1&username=nicolasmartine`
+    `https://cors-anywhere.herokuapp.com/http://api.geonames.org/timezoneJSON?lat=51.5&lng=-0.1&username=nicolasmartine`
   )
     .then(response => {
       return response.json();
@@ -57,7 +57,7 @@ function displayLondonTime() {
 }
 function displayTokyoTime() {
   fetch(
-    `https://api.geonames.org/timezoneJSON?lat=35.6&lng=139.8&username=nicolasmartine`
+    `https://cors-anywhere.herokuapp.com/http://api.geonames.org/timezoneJSON?lat=35.6&lng=139.8&username=nicolasmartine`
   )
     .then(response => {
       return response.json();
@@ -70,7 +70,7 @@ function displayTokyoTime() {
 }
 function displayLosAngelesTime() {
   fetch(
-    `https://api.geonames.org/timezoneJSON?lat=34&lng=-118.2&username=nicolasmartine`
+    `https://cors-anywhere.herokuapp.com/http://api.geonames.org/timezoneJSON?lat=34&lng=-118.2&username=nicolasmartine`
   )
     .then(response => {
       return response.json();
