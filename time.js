@@ -34,7 +34,7 @@ function displayNewYorkTime() {
     .then(response => {
       return response.json();
     })
-    //*and then do something with the data
+    //*and then do something with the json
     .then(data => {
       //*getting only the time from the format of data.time
       var timeString = data.time.substring(11);
